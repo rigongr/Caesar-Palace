@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.mainsection {
+#mainsection {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -12,41 +12,76 @@ body {
 #navbar {
     width: 100%;
     position: fixed;
-}
-.navbar-logo {
-    width: 12%;
-    float: left;
-    padding-left: 100px;
-}
-.navbar-links {
-    color: white;
-    font-size: 15px;
-    font-family: monospace;
-}
-.navbar-links > ol {
-    display: flex;
 
 }
-ul {
-    text-decoration: none;
-    padding-top: 25px;
-    padding-left: 150px;
-    font-size: 30px;
+.navbar-location {
+    margin-top: 35px;
+    margin-left: 50px;
 }
-a {
-    text-decoration: none;
-    color: white;
+.location-font {
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
-a:hover {
-    color: yellow;
-}
+
 .middle-title {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 90%;
     align-items: center;  
 }
 .title {
     width: 100%;
     text-align: center;
+}
+/* Mouse scroll part */
+.mouse-scroll {
+    text-align: center;
+}
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
+}
+
+svg #wheel {
+    animation: scroll ease 1.5s infinite;
+    text-align: center;
+}
+
+/* Second section */
+
+#second-section {
+    width: 100%;
+    height: 80vh;
+}
+.offers > h1 {
+    text-align: center;
+    font-size: 50px;
+
+}
+.boxes {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.box {
+    margin-top: 150px;
+    text-align: center;
+    width: 150px;
+    margin-right: 50px;
+    height: 150px;
+}
+
+
+.third-section {
+    width: 100%;
+    height: 70vh;
+    background: url("/images/wallpapers/palace0.jpg")  no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 }
