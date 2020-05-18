@@ -135,7 +135,7 @@ svg #wheel {
 #third-section {
     width: 100%;
     height: 60vh;
-    background: url("/images/wallpapers/caesars.jpg")  no-repeat center;
+    background: url("../images/wallpapers/caesars.jpg")  no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -286,14 +286,10 @@ svg #wheel {
 .footer-section4 {
     text-align: left;
     margin-top: 5%;
-    margin-left: 5%;
 }
 .footer-section4 > p {
     font-size: 20px;
 }
-
-
-
 
 /* Responsivnes */
 
@@ -312,6 +308,9 @@ svg #wheel {
     }
     .navbar-location {
         width: 32.5%;
+    }
+    .footer-section4 {
+        margin-left: 5%;
     }
 
 }
