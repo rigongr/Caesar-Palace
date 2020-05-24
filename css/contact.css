@@ -17,6 +17,7 @@
     margin-bottom: 150px;
 }
 
+
 .contact-form-left {
     width: 550px;
     height: 100%;
@@ -30,6 +31,11 @@
     color: white;
     font-family: 'DM Mono', monospace;
 }
+.color::-webkit-input-placeholder {
+    color: white;
+    font-size: 15px;
+    opacity: 0.5;
+ }
 .address > p {
     width: 550px;
     font-size: 25px;
@@ -82,4 +88,59 @@ input[type=email] {
     color: white;
     font-size: 25px;
 }
+
+button[type=submit] {
+    width: 140px;
+    height: 40px;
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #e62900;
+    margin-top: 15px;
+    transition: 1s;
+    cursor: pointer;
+    outline: none;
+}
+button[type=submit]:hover {
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid coral;
+    background-color: rgb(0, 0, 0, 0.8);
+    transition: ease-in-out 0.5s;
+}
   
+@media screen and (max-width: 720px) {
+    #navbar {
+        margin-bottom: 50px;
+    }
+    #mainsection {
+        height: 100%;
+    }
+    .contact-form-left {
+        text-align: center;
+        margin-bottom: 150px;
+    }
+    
+    .address > p {
+        width: 100%;
+    }
+    .phone-number > p{
+        width: 100%;
+    }
+    .ouremail > p{
+        width: 100%;
+    }
+}
+@media (min-width: 650px) and (max-width: 1024px) {
+    #mainsection {
+        height: 100%;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+    #mainsection {
+        height: 100%;
+    }
+    
+  }

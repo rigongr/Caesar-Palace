@@ -32,36 +32,35 @@
 
         <div class="contact-area">
             <div class="contact-form-left">
-                <h1 style="color: white; font-size: 50px; font-family: 'DM Mono', monospace;"> Contact us </h1>
-                <p style="color: white; font-family: 'DM Mono', monospace; margin-top: -30px;"> Get in touch </p>
-                <form action="#">
+                    <h1 style="color: white; font-size: 50px; font-family: 'DM Mono', monospace;"> Contact us </h1>
+                    <p style="color: white; font-family: 'DM Mono', monospace; margin-top: -30px;"> Get in touch </p>  
+                <form action="#" id="form" onsubmit="return validate()">
                     <div class="name-section">
                         <label>Name</label> 
-                        <input type="text">
+                        <input type="text" id="name">
                         <br>
                         <label>Email</label>
-                        <input type="email">
+                        <input type="email" id="email">
                         <label>Message</label>
-                        <textarea class="message-input"> </textarea>
+                        <textarea class="message-input" id="message"> </textarea>
                         <br>
-                        <button type="submit"></button>
+                        <button type="submit" onclick="validate()">Submit</button>
                     </div>
                 </form>
             </div>
             <div class="contact-form-right">
                 <div class="address" style="margin-bottom: 50px;">
-                    <h3> Address </h3>
+                    <h3 style="border-left: 1px solid white; padding-left: 15px;"> Address </h3>
                     <p>3570 S Las Vegas Blvd, Las Vegas, NV 89109, United States</p>
                 </div>
                 <div class="phone-number" style="margin-bottom: 50px;">
-                    <h3> Phone </h3>
+                    <h3 style="border-left: 1px solid white; padding-left: 15px;"> Phone </h3>
                     <p>+420 44 23 19 28</p>
                 </div>
                 <div class="ouremail" style="margin-bottom: 50px;">
-                    <h3> Email Address </h3>
+                    <h3 style="border-left: 1px solid white; padding-left: 15px;"> Email Address </h3>
                     <p>caesarpalace@support.com</p>
                 </div>
-
             </div>
         </div>
     </section>
