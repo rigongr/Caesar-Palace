@@ -1,0 +1,85 @@
+#mainsection {
+    background-image: url('../images/background/contact-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#navbar {
+    position: static;
+    margin-bottom: 150px;
+}
+
+.contact-form-left {
+    width: 550px;
+    height: 100%;
+    
+}
+.contact-form-right {
+    width: 550px;
+    height: 70%;
+    margin-left: 50px;
+    display: block;
+    color: white;
+    font-family: 'DM Mono', monospace;
+}
+.address > p {
+    width: 550px;
+    font-size: 25px;
+}
+.phone-number > p {
+    width: 250px;
+    font-size: 25px;
+    color: #e62900;
+    background-color: rgb(0,0,0, 0.5);
+}
+.ouremail > p {
+    width: 550px;
+    font-size: 25px;
+}
+.name-section {
+    color: white;
+    width: 100%;
+    display: block;
+
+}
+label {
+    margin-top: 50px;
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    display: block;
+}
+input {
+    border: none;
+    border-bottom: 1px solid white;
+    border-width: 3px;
+    background-color: rgb(0,0,0, 0.2);
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    outline: none;
+    font-family: monospace;
+    margin-bottom: 25px;
+}
+input[type=email] {
+    width: 450px;
+}
+.message-input {
+    width: 500px;
+    height: 150px;
+    border: 1px white solid;
+    border-radius: 0;
+    background-color: rgb(0,0,0, 0.2);
+    outline: none;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+}
+  
