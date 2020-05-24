@@ -14,7 +14,7 @@ $(function () {
 let name = document.getElementById('name');
 let email = document.getElementById('email');
 let message = document.getElementById('message');
-let form = docuemnt.getElementById('form');
+let form = document.getElementById('form');
 
 function validate() {
     if(name.value == "" || name.value.length < 2 || name.value == 09) {
