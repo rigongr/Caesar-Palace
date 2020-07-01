@@ -15,13 +15,14 @@ let name = document.getElementById('name');
 let email = document.getElementById('email');
 let message = document.getElementById('message');
 let form = document.getElementById('form');
+message.value = "";
 
 function validate() {
     if(name.value == "" || name.value.length < 2 || name.value == 09) {
         name.placeholder = "Name invalid."
         name.style.borderBottom = "solid 1px red"
         name.classList.add('color');
-        return false;
+        
     } else {
         name.style.borderBottom = "solid 1px white";
     }
@@ -30,13 +31,13 @@ function validate() {
         email.placeholder = "Insert a valid email"
         email.style.borderBottom = "solid 1px red"
         email.classList.add('color');
-        return false;
+    
     } else {
             email.style.borderBottom = "solid 1px white";
     }
     
     if(message.value == "" || message.value.length < 10) {
-        message.placeholder = "Insert a message"
+        message.placeholder = "Insert a message, longer than 10 characters atleast"
         message.style.border = "solid 1px red"
         message.classList.add('color');
         return false;

@@ -36,7 +36,7 @@
             <hr>
             <div class="boxes">
                 <div class="box">
-                        <img src="images/wallpapers/room1-mini.jpg">
+                        <img src="images/wallpapers/room1-mini.jpg" id="box-image">
                         <div class="text">
                             <p> Presidental Suite </p>
                         </div>
@@ -45,7 +45,7 @@
                         </div>
                 </div>
                 <div class="box">
-                    <img src="images/wallpapers/room2-mini.jpg">
+                    <img src="images/wallpapers/room2-mini.jpg" id="box-image">
                     <div class="text">
                         <p> Kings Castle </p>
                     </div>
@@ -53,6 +53,7 @@
                         <button id="btn2" class="btn" type="button" value="2">Room Details</button>
                     </div>
                 </div>
+                
                 <div id="popup">
                     <div class="popup-images">
                         <img src="images/wallpapers/popup-images/room1.jpg" id="popup-main-image">
