@@ -34,18 +34,16 @@
             <div class="contact-form-left">
                     <h1 style="color: white; font-size: 50px; font-family: 'DM Mono', monospace;"> Contact us </h1>
                     <p style="color: white; font-family: 'DM Mono', monospace; margin-top: -30px;"> Get in touch </p>  
-                <form action="#" id="form" onsubmit="return validate()">
-                    <div class="name-section">
-                        <label id="name_label">Name</label> 
-                        <input type="text" id="name">
+                <form action="includes/connect.php" method="POST" id="form" onsubmit="return validate()">
+                        <label>Name</label> 
+                        <input type="text" id="name" name="firstName">
                         <br>
-                        <label id="email-label">Email</label>
-                        <input type="email" id="email">
+                        <label>Email</label>
+                        <input type="email" id="email" name="mail">
                         <label>Message</label>
-                        <textarea class="message-input" id="message"> </textarea>
+                        <textarea class="message-input" id="message" name="message"> </textarea>
                         <br>
-                        <button type="submit" onclick="validate()">Submit</button>
-                    </div>
+                        <button type="submit" name="submit" onclick="validate()">Submit</button>
                 </form>
             </div>
             <div class="contact-form-right">
