@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,7 @@
     <title>Caesar Palace - Hotel and more</title>
 </head>
 <body>
+    
     <section id="rooms-mainsection">
         <div id="navbar" class="navbar-background">
             <div class="navbar-location">
@@ -35,33 +37,40 @@
             <h1> Featured Rooms </h1>
             <hr>
             <div class="boxes">
-                <div class="box">
-                        <img src="images/wallpapers/room1-mini.jpg" id="box-image">
+                    <div class="box">
+                        <img src="images/rooms/room1.jpg" id="box-image">
                         <div class="text">
                             <p> Presidental Suite </p>
                         </div>
                         <div class="room-detail-left">
-                            <button id="btn1" class="btn" type="button" value="1">Room Details</button>
+                            <button id="btn1" class="btn" type="button" >Room Details</button>
                         </div>
-                </div>
-                <div class="box">
-                    <img src="images/wallpapers/room2-mini.jpg" id="box-image">
-                    <div class="text">
-                        <p> Kings Castle </p>
-                    </div>
-                    <div class="room-detail-left">
-                        <button id="btn2" class="btn" type="button" value="2">Room Details</button>
-                    </div>
-                </div>
-                
+                     </div>
+                <?php 
+
+                $db = mysqli_connect("localhost", "root", "", "db_caesar");
+                $sql = "SELECT * FROM add_room";
+                $result = mysqli_query($db, $sql);
+                while($row = mysqli_fetch_array($result)) {
+                    echo "<div class='box'>";
+                        echo "<img src='images/rooms/" . $row['Image'] . "' id='box-image'>";
+                        echo "<div class='text'>";
+                            echo "<p>" . $row['Text'] . "</p>";
+                        echo "</div>";
+                        echo "<div class='room-detail-left'>";
+                            echo "<button id='btn1' class='btn' type='button'>". "Room Details" . "</button>";
+                        echo "</div>";
+                    echo "</div>";
+                        }   
+                ?>
                 <div id="popup">
                     <div class="popup-images">
                         <img src="images/wallpapers/popup-images/room1.jpg" id="popup-main-image">
                         <div class="small-images">
                             <i class="fa fa-angle-left" id="popup-left-arrow" aria-hidden="true"></i>
-                            <img src="images/wallpapers/popup-images/room1-mini.jpg" class="popup-small-image">
-                            <img src="images/wallpapers/popup-images/room2-mini.jpg" class="popup-small-image">
-                            <img src="images/wallpapers/popup-images/room3-mini.jpg" class="popup-small-image">
+                            <img src="images/wallpapers/popup-images/room1.jpg" class="popup-small-image">
+                            <img src="images/wallpapers/popup-images/room2.jpg" class="popup-small-image">
+                            <img src="images/wallpapers/popup-images/room3.jpg" class="popup-small-image">
                             <i class="fa fa-angle-right" id="popup-right-arrow" aria-hidden="true"></i>
                         </div>
                     </div>

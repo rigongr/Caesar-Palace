@@ -15,7 +15,7 @@ let name = document.getElementById('name');
 let email = document.getElementById('email');
 let message = document.getElementById('message');
 let form = document.getElementById('form');
-message.value = "";
+message.value = " ";
 
 function validate() {
     if(name.value == "" || name.value.length < 2 || name.value == 09) {

@@ -1,0 +1,19 @@
+#mainsection {
+    background-image: url('../images/background/');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-room-form {
+    text-align: center;
+}
+
+div {
+    margin-top: 15px;
+}
+
+textarea {
+    background: none;
+    width: 500px;
+    height: 200px;
+}
