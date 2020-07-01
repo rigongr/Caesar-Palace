@@ -42,7 +42,8 @@
     box-shadow: none;
     padding: 0;
     transition: 0.5s;
-    margin-bottom: 0;
+    margin-bottom: 10;
+    background-color: #FFDEFF;
 }
 hr {
     width: 50%;
@@ -68,4 +69,20 @@ hr {
 
 .room-detail-left:hover {
     cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    background-color: #b68e58;
+    outline: none;
+    height: 100%;
+    cursor: pointer;
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    transition: 1s;
+    border: none;
+}
+#btn:hover {
+    background-color: black;
+    color: white;
 }

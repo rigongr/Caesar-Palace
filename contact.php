@@ -17,16 +17,16 @@
     <section id="mainsection">
         <div id="navbar" class="navbar-background">
             <div class="navbar-location">
-               <a href="contact.html"><i class="fas fa-map-marker-alt fa-md i"><span class="location-font one">Las Vegas, Nevada</span></i></a>
+               <a href="contact.php"><i class="fas fa-map-marker-alt fa-md i"><span class="location-font one">Las Vegas, Nevada</span></i></a>
             </div>
             <div class="navbar-logo">
-                <a href="index.html"><img src="images/icons/main-icon.png" width="100"></a>
+                <a href="index.php"><img src="images/icons/main-icon.png" width="100"></a>
             </div>
             <div class="navbar-phone">
-                <a href="contact.html"><i class="fa fa-phone i"><span class="location-font two">+420 44 23 19 28</span></i></a>
+                <a href="contact.php"><i class="fa fa-phone i"><span class="location-font two">+420 44 23 19 28</span></i></a>
             </div>
             <div class="navbar-book">
-                <a href="rooms.html"><i class="far fa-calendar-plus i"><span class="location-font three">Book now</span></i></a>
+                <a href="rooms.php"><i class="far fa-calendar-plus i"><span class="location-font three">Book now</span></i></a>
             </div>
         </div>
 
@@ -70,9 +70,9 @@
             <div class="footer-section1">
                 <H1> QUICK LINKS </H1>
                 <hr style="color: white; width: 250px;">
-                <a href="index.html"><p> Home </p></a>
-                <a href="rooms.html"><p> Rooms </p></a>
-                <a href="contact.html"><p> Contact us </p></a>
+                <a href="index.php"><p> Home </p></a>
+                <a href="rooms.php"><p> Rooms </p></a>
+                <a href="contact.php"><p> Contact us </p></a>
             </div>
 
             <div class="footer-section2">

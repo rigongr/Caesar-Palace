@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/popup-window.css">
     <link rel="stylesheet" type="text/css" href="css/rooms.css">
     <link rel="icon" href="/images/icons/caesaricon.png">
     <title>Caesar Palace - Hotel and more</title>
@@ -17,30 +18,30 @@
     <section id="rooms-mainsection">
         <div id="navbar" class="navbar-background">
             <div class="navbar-location">
-                <a href="contact.html"><i class="fas fa-map-marker-alt fa-md i"><span class="location-font one">Las Vegas, Nevada</span></i></a>
+                <a href="contact.php"><i class="fas fa-map-marker-alt fa-md i"><span class="location-font one">Las Vegas, Nevada</span></i></a>
             </div>
             <div class="navbar-logo">
-                <a href="index.html"><img src="images/icons/main-icon.png" width="100"></a>
+                <a href="index.php"><img src="images/icons/main-icon.png" width="100"></a>
             </div>
             <div class="navbar-phone">
-                <a href="contact.html"><i class="fa fa-phone i"><span class="location-font two">+420 44 23 19 28</span></i></a>
+                <a href="contact.php"><i class="fa fa-phone i"><span class="location-font two">+420 44 23 19 28</span></i></a>
             </div>
             <div class="navbar-book">
-                <a href="rooms.html"><i class="far fa-calendar-plus i"><span class="location-font three">Book now</span></i></a>
+                <a href="rooms.php"><i class="far fa-calendar-plus i"><span class="location-font three">Book now</span></i></a>
             </div>
+            
         </div>
-
         <div class="rooms-page">
             <h1> Featured Rooms </h1>
             <hr>
-            <div class="boxes" style="margin-bottom: 10%;">
+            <div class="boxes">
                 <div class="box">
                         <img src="images/wallpapers/room1-mini.jpg">
                         <div class="text">
                             <p> Presidental Suite </p>
                         </div>
                         <div class="room-detail-left">
-                            <h3> Room details </h3>
+                            <button id="btn1" class="btn" type="button" value="1">Room Details</button>
                         </div>
                 </div>
                 <div class="box">
@@ -49,12 +50,32 @@
                         <p> Kings Castle </p>
                     </div>
                     <div class="room-detail-left">
-                        <h3> Room details </h3>
+                        <button id="btn2" class="btn" type="button" value="2">Room Details</button>
                     </div>
                 </div>
-                
+                <div id="popup">
+                    <div class="popup-images">
+                        <img src="images/wallpapers/popup-images/room1.jpg" id="popup-main-image">
+                        <div class="small-images">
+                            <i class="fa fa-angle-left" id="popup-left-arrow" aria-hidden="true"></i>
+                            <img src="images/wallpapers/popup-images/room1-mini.jpg" class="popup-small-image">
+                            <img src="images/wallpapers/popup-images/room2-mini.jpg" class="popup-small-image">
+                            <img src="images/wallpapers/popup-images/room3-mini.jpg" class="popup-small-image">
+                            <i class="fa fa-angle-right" id="popup-right-arrow" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="popup-form">
+                        <h1> Presidental Suite </h1>
+                        <form id="popup-booking-form">
+                            Name <input type = "name">
+                            Lastname <input type = "text">
+                            
+                        </form>
+                    </div>
+                    <i class="fa fa-times" aria-hidden="true" id="close"></i>
+                </div>
             </div>
-            <h2 class="h2"> Browse through our rooms chambers</h2>
+            <!-- <h2 class="h2"> Browse through our rooms chambers</h2>
             <hr>
             <div class="boxes" style="padding-bottom: 10%;">
                 <div class="box">
@@ -63,7 +84,7 @@
                         <p> Kings Castle </p>
                     </div>
                     <div class="room-detail-left">
-                        <h3> Room details </h3>
+                        <button id="btn" type="button">Room Details</button>
                     </div>
                 </div>
                 <div class="box">
@@ -72,7 +93,7 @@
                         <p> Kings Castle </p>
                     </div>
                     <div class="room-detail-left">
-                        <h3> Room details </h3>
+                        <button id="btn" type="button">Room Details</button>
                     </div>
                 </div>
                 <div class="box">
@@ -81,7 +102,7 @@
                         <p> Kings Castle </p>
                     </div>
                     <div class="room-detail-left">
-                        <h3> Room details </h3>
+                        <button id="btn" type="button">Room Details</button>
                     </div>
                 </div>
                 <div class="box">
@@ -90,47 +111,12 @@
                         <p> Kings Castle </p>
                     </div>
                     <div class="room-detail-left">
-                        <h3> Room details </h3>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="images/wallpapers/room2-mini.jpg">
-                    <div class="text">
-                        <p> Kings Castle </p>
-                    </div>
-                    <div class="room-detail-left">
-                        <h3> Room details </h3>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="images/wallpapers/room2-mini.jpg">
-                    <div class="text">
-                        <p> Kings Castle </p>
-                    </div>
-                    <div class="room-detail-left">
-                        <h3> Room details </h3>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="images/wallpapers/room2-mini.jpg">
-                    <div class="text">
-                        <p> Kings Castle </p>
-                    </div>
-                    <div class="room-detail-left">
-                        <h3> Room details </h3>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="images/wallpapers/room2-mini.jpg">
-                    <div class="text">
-                        <p> Kings Castle </p>
-                    </div>
-                    <div class="room-detail-left">
-                        <h3> Room details </h3>
+                        <button id="btn" type="button">Room Details</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        
     </section>
     
     <section id="footer">
@@ -138,9 +124,9 @@
             <div class="footer-section1">
                 <H1> QUICK LINKS </H1>
                 <hr style="color: white; width: 250px;">
-                <a href="index.html"><p> Home </p></a>
-                <a href="rooms.html"><p> Rooms </p></a>
-                <a href="contact.html"><p> Contact us </p></a>
+                <a href="index.php"><p> Home </p></a>
+                <a href="rooms.php"><p> Rooms </p></a>
+                <a href="contact.php"><p> Contact us </p></a>
             </div>
 
             <div class="footer-section2">
@@ -173,6 +159,7 @@
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/rooms-popup.js"></script>
     <script src="javascript/main.js"></script>
 </body>
 </html>
