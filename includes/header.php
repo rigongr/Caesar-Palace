@@ -21,38 +21,39 @@
                      <a href="contact.php"><i class="fa fa-phone i"><span class="location-font two">+420 44 23 19 28</span></i></a>
                  </div>
             <?php 
-
-                $userUiD = $_SESSION['userUid'];
-                $usergroup = $_SESSION['userGroup'];
-                if(isset($_SESSION['userID']) && isset($usergroup) == 1) {
-                    echo '
-                 <div class="navbar-phone">
-                 <a href="admin_room_add.php"><i class="fa fa-phone i"><span class="location-font two">Admin Panel</span></i></a>
-                </div>
-                 <div class="navbar-logout">
-                    <p> Logged in as ' . '<span style="color: yellow;">' .  $userUiD . '</span>' . '</p>';
-                    echo ' <form action="includes/logout.inc.php" method="post">
-                    <button class="logout-button" name="logout-button"> Logout </button>
-                    </form>
-                </div>';
-                }  else if (isset($_SESSION['userID']) && isset($_SESSION['userGroup']) == 0) {
-                    echo '
-                    <div class="navbar-logout">
-                       <p> Logged in </p>
-                       <form action="includes/logout.inc.php" method="post">
-                       <button class="logout-button" name="logout-button"> Logout </button>
-                       </form>
-                   </div>';
-                }
-                
-                else {
+                if(!isset($_SESSION['userUid'])) {
                     echo '            
-                 <div class="navbar-book">
-                 <a href="log_in.php"><i class="far fa fa-sign-in i"><span class="location-font three">Login</span></i></a>
-             </div>
-             <div class="navbar-book">
-                 <a href="sign_up.php"><i class="far fa fa-user-plus i"><span class="location-font three">Register</span></i></a>
-             </div>';
+                    <div class="navbar-book">
+                    <a href="log_in.php"><i class="far fa fa-sign-in i"><span class="location-font three">Login</span></i></a>
+                   </div>
+                <div class="navbar-book">
+                    <a href="sign_up.php"><i class="far fa fa-user-plus i"><span class="location-font three">Register</span></i></a>
+                </div>';
+                };
+                if(isset($_SESSION['userUid'])) {
+                    if($_SESSION['userGroup'] > 0) {
+                        echo '
+                        <div class="navbar-phone">
+                        <a href="admin_room_add.php"><i class="fa fa-phone i"><span class="location-font two">Admin Panel</span></i></a>
+                       </div>
+                       ';
+                       echo '
+                       <div class="navbar-logout">
+                          <p> Logged in as ' . '<span style="color: yellow;">' . $_SESSION['userUid']   . '</span>' . '</p>';
+                          echo ' <form action="includes/logout.inc.php" method="post">
+                          <button class="logout-button" name="logout-button"> Logout </button>
+                          </form>
+                      </div>';
+                    };
+                     if($_SESSION['userGroup'] == 0) {
+                        echo '
+                        <div class="navbar-logout">
+                           <p> Logged in as ' . '<span style="color: yellow;">' . $_SESSION['userUid']   . '</span>' . '</p>';
+                           echo ' <form action="includes/logout.inc.php" method="post">
+                           <button class="logout-button" name="logout-button"> Logout </button>
+                           </form>
+                       </div>';
+                    } 
                 }
             ?>
         </div>

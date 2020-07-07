@@ -5,6 +5,8 @@
     justify-content: space-between;
     display: none;
     margin-bottom: 20px;
+    position: absolute;
+    top: calc(50% - 200px);
 }
 .popup-images {
     width: 50%;
@@ -23,8 +25,8 @@
     user-select: none;
 }
 .popup-small-image {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-top: 10px;
     user-select: none;
     margin-bottom: 10px;
@@ -46,4 +48,19 @@
 .popup-form {
     width: 50%;
     height: 100%;
+}
+
+@media screen and (max-width: 720px) { 
+
+    .popup-small-image {
+        width: 50px;
+        height: 50px;
+    }
+    #popup {
+        width: 100%;   
+        position: absolute;
+    }
+    .popup-images {
+        width: 80%;
+    }
 }

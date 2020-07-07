@@ -371,5 +371,10 @@ svg #wheel {
     .navbar-logo {
         width: 25%;
     }
+    .navbar-logout { 
+        display: block !important;
+        margin-top: -1.5%;
+    }
+
 
 }
