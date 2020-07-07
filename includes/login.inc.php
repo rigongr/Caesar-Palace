@@ -30,7 +30,7 @@
                         session_start();
                         $_SESSION['userID'] = $row['idUsers'];
                         $_SESSION['userUid'] = $row['uidUsers'];
-
+                        $_SESSION['userGroup'] = $row['usergroup'];
                         header("Location: ../index.php?login=success");
                         exit();
                     } else {
