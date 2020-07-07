@@ -6,8 +6,32 @@
                 <a href="index.php"><p> Home </p></a>
                 <a href="rooms.php"><p> Rooms </p></a>
                 <a href="contact.php"><p> Contact us </p></a>
-                <a href="login.php"><p> Login </p></a>
-                <a href="sign_up.php"><p> Register </p></a>
+                <?php 
+                    if(!isset($_SESSION['userUid'])) {
+                        echo ' 
+                        <a href="log_in.php"><p> Login </p></a>
+                        <a href="sign_up.php"><p> Register </p></a>           
+                        ';
+                    };
+                    if(isset($_SESSION['userUid'])) {
+                        if($_SESSION['userGroup'] > 0) {
+                        echo '
+                        <a href="admin_room_add.php"><span>Admin Panel</span></a>
+                       ';
+                       echo '  <p> Logged in as ' . '<span style="color: yellow;">' . $_SESSION['userUid']   . '</span>' . '</p>';
+                       echo ' <form action="includes/logout.inc.php" method="post">
+                       <button class="logout-button" name="logout-button"> Logout </button>
+                       </form>';
+                    }
+                    if($_SESSION['userGroup'] == 0) {
+                        echo '  <p> Logged in as ' . '<span style="color: yellow;">' . $_SESSION['userUid']   . '</span>' . '</p>';
+                        echo ' <form action="includes/logout.inc.php" method="post">
+                        <button class="logout-button" name="logout-button"> Logout </button>
+                        </form>';
+                    }
+                }
+                    
+                ?>
             </div>
 
             <div class="footer-section2">

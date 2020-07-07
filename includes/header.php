@@ -14,12 +14,12 @@
                  <div class="navbar-book">
                      <a href="rooms.php"><i class="far fa-calendar-plus i"><span class="location-font three">Book now</span></i></a>
                  </div>
-                 <div class="navbar-location">
-                     <a href="contact.php"><i class="fas fa-map-marker-alt fa-md i"><span class="location-font one">Las Vegas, Nevada</span></i></a>
-                 </div>
                  <div class="navbar-phone">
                      <a href="contact.php"><i class="fa fa-phone i"><span class="location-font two">+420 44 23 19 28</span></i></a>
                  </div>
+                 <div class="navbar-location">
+                     <a href="contact.php"><i class="fas fa-map-marker-alt fa-md i"><span class="location-font one">Las Vegas, Nevada</span></i></a>
+                </div>
             <?php 
                 if(!isset($_SESSION['userUid'])) {
                     echo '            
