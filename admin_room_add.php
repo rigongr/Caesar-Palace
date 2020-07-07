@@ -1,3 +1,5 @@
+
+<!-- THE UPLOAD ROOM BOX -->
 <?php 
     $msg = "";
     // If upload button is pressed
@@ -38,6 +40,7 @@
 <body>
     <section id="mainsection">
         <div class="add-room-form">
+        <h1> ADD ROOMS TO ROOMS PAGE </h1>
         <a href="index.php" style="color: black"><img src="images/icons/main-icon.png" width="200"></a>
             <form method="post" action="" enctype="multipart/form-data">
                 <input type="hidden" name="size" value="1000000">

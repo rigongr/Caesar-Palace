@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #mainsection {
     margin: 0;
     padding: 0;
@@ -9,14 +10,46 @@ body {
     height: 100vh;
     background-image: url('../images/background/mainbackground.jpg');
 }
+.displaynone {
+    display: none;
+}
+.navbar-logout {
+    width: 20%;
+    color: white;
+    display: flex;
+    margin-left: 35px;
+    margin-top: 0.5%;
+}
+.logout-button {
+    width: 70px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.2);
+    outline: none;
+    margin-left: 15px;
+    margin-top: 5%;
+    
+}
 #navbar {
     width: 100%;
     height: 50px;
-    position: fixed;
     display: flex;
     z-index: 10;
-    background-color: rgb(0,0,0,0.5);
+    background-color: rgb(0,0,0,0.8);
     color: black;
+}
+.navbar-icons {
+    display: inherit;
+    width: 95%;
+    text-align: center;
+}
+.featured-text {
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    color: black;
+    margin-top: 20%;
+    z-index: 5;
 }
 a {
     text-decoration: none;
@@ -24,9 +57,14 @@ a {
 }
 
 .navbar-location {
-    width: 45%;
+    width: 17%;
     margin-top: 25px;
-    margin-left: 50px;
+    margin-left: 30px;
+}
+.navbar-home {
+    width: 10%;
+    margin-top: 25px;
+    margin-left: 30px;
 }
 .location-font {
     font-size: 15px;
@@ -46,14 +84,15 @@ a {
     transition: ease-in-out 0.5s;
 }
 .navbar-logo {
-    width: 25%;
+    width: 10%;
+    margin-left: 5%;
 }
 .navbar-phone {
     width: 15%;
     margin-top: 25px;
 }
 .navbar-book {
-    width: 10%;
+    width: 15%;
     margin-top: 25px;
 
 }
@@ -62,7 +101,7 @@ a {
     display: flex;
     width: 100%;
     height: 80%;
-    align-items: center;  
+    align-items: center;
 }
 .title {
     width: 100%;
@@ -90,7 +129,7 @@ svg #wheel {
 
 #second-section {
     width: 100%;
-    height: 105vh;
+    height: 100%;
 }
 .offers > h1 {
     text-align: center;
@@ -229,6 +268,7 @@ svg #wheel {
 #footer {
     width: 100%;
     height: 100%;
+    bottom: 0;
 }
 
 .footer {
@@ -299,7 +339,7 @@ svg #wheel {
 
 @media screen and (max-width: 720px) {
     .main-title {
-        width: 450px;
+        width: 100%;
     }
     #second-section {
         height: 100%;
@@ -311,10 +351,25 @@ svg #wheel {
         display: none;
     }
     .navbar-location {
-        width: 32.5%;
+        width: 16%;
     }
     .footer-section4 {
         margin-left: 5%;
+    }
+    .text {
+        font-size: 25px;
+    }
+    .featured-text {
+        font-size: 35px;
+    }
+    .navbar-logo {
+        display: none;
+    }
+    .navbar-background {
+        text-align: center;
+    }
+    .navbar-logo {
+        width: 25%;
     }
 
 }
