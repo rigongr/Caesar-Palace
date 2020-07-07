@@ -41,7 +41,7 @@ if (isset($_POST['signup-submit'])) {
                 exit();
             }
             else {
-                $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?,?,?)";
+                $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers, usergroup) VALUES (?,?,?, 0)";
                 $stmt = mysqli_stmt_init($conn);
 
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
