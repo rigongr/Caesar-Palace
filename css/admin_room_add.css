@@ -7,6 +7,12 @@
 .add-room-form {
     text-align: center;
 }
+#navbar {
+    margin: 0;
+}
+.navbar-icons {
+    margin: 0;
+}
 
 div {
     margin-top: 15px;

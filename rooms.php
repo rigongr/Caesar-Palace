@@ -35,9 +35,10 @@
                             echo "<p class='text'>" . $row['Text'] . "</p>";
                         echo "</div>";
                         echo "<div class='room-detail-left'>";
-                            echo "<button id='btn1' class='btn' type='button'>". "Room Details" . "</button>";
+                            echo "<button id='btn1' class='btn' type='button'>". "Book now" . "</button>";
                         echo "</div>";
-                        echo "<p> Number of rooms: 1 </p>";
+                        echo "<p> Number of rooms: " . $row['num_rooms'] . "</p>";
+                        echo "<p> Price per night: $" . $row['room_price'] . "</p>";
                     echo "</div>";
                         } 
                 ?>

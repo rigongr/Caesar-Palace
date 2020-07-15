@@ -1,4 +1,6 @@
-
+<?php 
+    session_start();
+?>
 <!-- THE UPLOAD ROOM BOX -->
 <?php 
     $msg = "";
@@ -13,8 +15,11 @@
         // Get all the submitted data from the form
         $image = $_FILES['image']['name'];
         $text = $_POST['text'];
+        $num_rooms = $_POST['num_rooms'];
+        $room_price = $_POST['room_price'];
+        $posted_by = $_SESSION['userUid'];
 
-        $sql = "INSERT INTO add_room(Image, Text) VALUES ('$image', '$text')";
+        $sql = "INSERT INTO add_room(Image, Text, num_rooms, room_price, posted_by) VALUES ('$image', '$text', '$num_rooms', '$room_price', '$posted_by')";
         mysqli_query($db, $sql); // stores the dubmitted data into the database table: add_room
 
         // This moves the uploaded image inside the folder -> Images
@@ -27,7 +32,6 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,9 +39,9 @@
     <link rel="stylesheet" type="text/css" href="css/admin_room_add.css">
     <link rel="icon" href="/images/icons/caesaricon.png">
     <title>Caesar Palace - Hotel and more</title>
-    
 </head>
 <body>
+
     <section id="mainsection">
         <div class="add-room-form">
         <h1> ADD ROOMS TO ROOMS PAGE </h1>
@@ -51,6 +55,14 @@
                     <textarea name="text" cols="40" rows="4" placeholder="What's the name of the room?"> </textarea>
                 </div>
                 <div>
+                    <label> Number of rooms </label>
+                    <input type="number" min="1" max="5" name="num_rooms" style="width: 35px" value="1">
+                </div>
+                <div>
+                    <label> Price per night </label>
+                    <input type="number" name="room_price" style="width: 50px" value="1">
+                </div>
+                <div>
                     <input type="submit" name="upload" value="Uploade Image">
                 </div>
 
@@ -58,6 +70,7 @@
         </div>
     </section>
 
+    <?php require 'includes/footer.php' ?>
 
 </body>
 </html>
