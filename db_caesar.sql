@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 15, 2020 at 09:16 PM
+-- Generation Time: Jul 15, 2020 at 09:23 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -41,33 +41,8 @@ CREATE TABLE `add_room` (
 --
 
 INSERT INTO `add_room` (`ID`, `Image`, `Text`, `num_rooms`, `room_price`, `posted_by`) VALUES
-(98, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(99, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(100, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(101, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(102, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(103, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(104, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(105, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(106, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(107, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(108, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(109, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(110, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(111, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(112, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(113, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(114, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(115, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(116, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(117, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(118, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(119, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(120, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(121, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(122, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(123, 'Hotelroom-Alamy.jpg', ' ', 1, 1, 'Rigon'),
-(124, 'Hotelroom-Alamy.jpg', ' lllll', 2, 50, 'Rigon');
+(125, 'Hotelroom-Alamy.jpg', ' Single Room', 1, 30, 'Rigon'),
+(126, 'room1.jpg', ' Presidental Suite', 5, 350, 'Rigon');
 
 -- --------------------------------------------------------
 
@@ -142,7 +117,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `add_room`
 --
 ALTER TABLE `add_room`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
 
 --
 -- AUTO_INCREMENT for table `emails`
